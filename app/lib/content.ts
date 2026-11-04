@@ -1,0 +1,41 @@
+export const content = {
+  vi: {
+    nav: ["Trang chủ", "Giới thiệu", "Lĩnh vực", "Dự án", "Tin tức", "Tuyển dụng", "Liên hệ"],
+    hero: "Một tập đoàn.\nNhiều động lực phát triển.",
+    heroText: "Thành Long Group đồng hành cùng Việt Nam trên hành trình phát triển công nghiệp xanh, hạ tầng bền vững và những cộng đồng thịnh vượng hơn.",
+    aboutTitle: "Kinh nghiệm hôm nay,\ntầm nhìn cho ngày mai.",
+    aboutText: "Từ nền tảng thép vững chắc, Thành Long mở rộng hệ sinh thái sang năng lượng xanh, thương mại, đầu tư và nước sạch. Mỗi lĩnh vực là một mảnh ghép trong cam kết tạo ra những giá trị dài hạn cho đối tác, xã hội và các thế hệ tương lai.",
+    sectorsTitle: "Năng lực kiến tạo\nkhông giới hạn.",
+    sectors: ["Thép", "Năng lượng xanh", "Thương mại", "Đầu tư", "Nước sạch"],
+    projectTitle: "Biến tầm nhìn\nthành hiện thực.",
+    projectText: "Những dự án chúng tôi chọn đồng hành đều bắt đầu từ một câu hỏi: làm thế nào để ngày mai tốt đẹp hơn hôm nay?",
+    newsTitle: "Câu chuyện\nđang được viết tiếp.",
+    news: ["Thành Long Group khởi động hành trình chuyển đổi năng lượng xanh", "Dấu ấn Thành Long trong chuỗi cung ứng thép miền Trung", "Đầu tư bền vững: khi tăng trưởng song hành cùng trách nhiệm"],
+    careersTitle: "Cùng chúng tôi kiến tạo\ntương lai bền vững.",
+    careersText: "Thành Long tìm kiếm những người dám nghĩ lớn, làm thật và muốn tạo ra ảnh hưởng tích cực.",
+    contactTitle: "Kết nối để cùng\nkiến tạo tương lai.",
+    address: "Trụ sở Thành Long Group, Việt Nam",
+    email: "hello@thanhlonggroup.vn",
+  },
+  en: {
+    nav: ["Home", "About", "Sectors", "Projects", "News", "Careers", "Contact"],
+    hero: "One group.\nMany forces of progress.",
+    heroText: "Thanh Long Group partners with Vietnam on a journey of green industry, resilient infrastructure and more prosperous communities.",
+    aboutTitle: "Experience for today,\nvision for tomorrow.",
+    aboutText: "Built on a strong foundation in steel, Thanh Long has grown its ecosystem across green energy, commerce, investment and clean water. Each sector is part of our commitment to create lasting value for our partners, society and generations to come.",
+    sectorsTitle: "The power to build\nwithout limits.",
+    sectors: ["Steel", "Green energy", "Commerce", "Investment", "Clean water"],
+    projectTitle: "Turning vision\ninto reality.",
+    projectText: "Every project we choose to pursue begins with one question: how can tomorrow be better than today?",
+    newsTitle: "The story\ncontinues.",
+    news: ["Thanh Long Group begins its green energy transition", "Thanh Long's mark on the central steel supply chain", "Sustainable investment: growth alongside responsibility"],
+    careersTitle: "Build a sustainable\nfuture with us.",
+    careersText: "Thanh Long is looking for people who think boldly, act decisively and want to create positive impact.",
+    contactTitle: "Connect to build\nthe future together.",
+    address: "Thanh Long Group headquarters, Vietnam",
+    email: "hello@thanhlonggroup.vn",
+  },
+} as const;
+
+export type Language = keyof typeof content;
+export const routeKeys = ["/", "/gioi-thieu", "/linh-vuc", "/du-an", "/tin-tuc", "/tuyen-dung", "/lien-he"];
